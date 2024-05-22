@@ -1,0 +1,5 @@
+beautifulsoup4==4.12.3
+deep-translator==1.11.4
+genanki==0.13.1
+openai-whisper==20231117
+pinyin==0.4.0
