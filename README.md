@@ -1,6 +1,12 @@
 # chinese-anki-gen
 
-Generate Anki Deck from chinese audio files.
+Generate Anki Deck from chinese audio files. 
+
+Example Card:
+
+![Example Card](example_card.png)
+
+Steps in the script:
 1. Get the chinese character by whisper model
 2. get pinyin 
 3. get translation to target language
@@ -8,9 +14,8 @@ Generate Anki Deck from chinese audio files.
 5. pack everything into a flashcard
 6. export deck of vocabulary including the all cards
 
-You can split audio files by words e.g. with [mp3split](https://wiki.ubuntuusers.de/mp3splt/)
+The input requires a single audio file per word. You can split audio files by words e.g. with [mp3split](https://wiki.ubuntuusers.de/mp3splt/)
 
-e.g. 
 ```sh
 mp3splt -s -d $targetDir -p th=-54,shots=10 $FileName
 ```
@@ -24,3 +29,4 @@ overwrite_char = {
     "input/file_2.mp3" : "人",
 }
 ```
+
